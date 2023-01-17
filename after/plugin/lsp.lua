@@ -7,10 +7,19 @@ lsp.preset('recommended')
 lsp.nvim_workspace()
 
 lsp.setup(
-lsp.ensure_installed( {
-'tsserver',
-'eslint',
-'sumneko_lua',
-'rust_analyzer',
-} )
+	lsp.ensure_installed( {
+		'tsserver',
+		'eslint',
+		'sumneko_lua',
+		'rust_analyzer',
+	} )
 )
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = true,
+	update_in_insert = false,
+	underline = true,
+	severity_sort = true,
+	float = true,
+})
+vim.opt.signcolumn = 'yes'
