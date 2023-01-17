@@ -3,6 +3,10 @@
 - have nvim and fzf installed
 - clone this repo
 - *clone packer from github!*
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 - `:so` everything
 - do `:PackerSync`
 - *you are done and ready :D*  
