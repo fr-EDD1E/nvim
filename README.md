@@ -8,9 +8,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 - *install nvm:*
-```
-https://github.com/nvm-sh/nvm#installing-and-updating
-```
+
+(https://github.com/nvm-sh/nvm#installing-and-updating)
 ```
 nvm install node
 ```
