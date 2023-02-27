@@ -18,22 +18,31 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('maxmellon/vim-jsx-pretty')
     --use({
-      --  'rose-pine/neovim',
-        --as = 'rose-pine',
-        --config = function()
-         --   vim.cmd('colorscheme rose-pine')
-        --end
+    --  'rose-pine/neovim',
+    --as = 'rose-pine',
+    --config = function()
+    --   vim.cmd('colorscheme rose-pine')
+    --end
     --})
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup{
             open_mapping = [[<c-\>]],
-            autochdir = false,
-            direction = 'float',
+            autochdir = true,
+            direction = 'horizontal',
             float_opts = {
                 border = 'curved',
             },
         }
     end}
+
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
+
     use({
         'NTBBloodbath/doom-one.nvim',
         as = 'doom-one',
