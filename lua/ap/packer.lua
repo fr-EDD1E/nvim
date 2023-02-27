@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
         require("toggleterm").setup{
             open_mapping = [[<c-\>]],
             autochdir = true,
-            direction = 'horizontal',
+            direction = 'float',
             float_opts = {
                 border = 'curved',
             },
