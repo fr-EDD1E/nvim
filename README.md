@@ -1,6 +1,6 @@
 # This is personal README so that I don't forget the setup steps of this config
 
-- have nvim and fzf installed
+- have nvim and fzf installed - *neovim must be v0.8+!*
 - clone this repo
 - *clone packer from github!*
 ```
@@ -16,6 +16,5 @@ nvm install node
 ```
 cd ~/.config/nvim/ && nvm use node
 ```
-- `:so` everything
-- do `:PackerSync`
+- `:so` everything starting from Packer and `PackerSync`
 - *you are done and ready :D*  
